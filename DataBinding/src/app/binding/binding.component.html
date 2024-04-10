@@ -1,0 +1,14 @@
+<p> binding works!</p>
+
+<h2> Username: {{getUser()}}</h2>
+<h2>Email : {{getEmail()}}</h2>
+<h2>Date and Time : {{getDate()}}</h2>
+
+<button [disabled]="status" > click me</button>
+
+<h1 [textContent]="text"></h1>
+<h3 [style.color]="isError?'red':'blue'"> Hello bichitra how are you</h3>
+<img [src]="link" alt="Dynamic Image">
+<a href="https://pagedart.com">
+    <img [src]="newLink">
+  </a>

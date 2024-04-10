@@ -1,0 +1,29 @@
+<p>product-details works!</p>
+
+<h2>Moblie details </h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>productid</th>
+            <th>productname</th>
+            <th>price</th>
+            <th>category</th>
+            <th>expdate</th>
+            <th>manfacture</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products, trackBy:trackByProductCode,let no=index">
+            <td>{{product.productid}}</td>
+            <td>{{product.productname}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.expDate}}</td>
+            <td>{{product.manfacture}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br>
+<button (click)="getAllData()">click</button>

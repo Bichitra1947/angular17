@@ -1,0 +1,12 @@
+<p>custom-pipe works!</p>
+
+<h2> name : {{var_one | uppercase}}</h2>
+<h2> name : {{var_one | titlecase}}</h2>
+<h2> name : {{var_one | lowercase}}</h2>
+<h2> date&time : {{datetime}}</h2>
+<h2> date&time : {{datetime | date :"dd-mm-yyyy"}}</h2>
+<h2> date&time : {{datetime | date :"medium"}}</h2>
+<h2> date&time : {{datetime | date :"shortTime"}}</h2>
+<h2> slice :  {{var_one | slice:2:3}}</h2>
+<h2> json format : {{person |json}}</h2>
+<h2> percentage : {{var_two|percent}}</h2>

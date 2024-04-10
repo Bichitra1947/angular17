@@ -1,0 +1,25 @@
+<p>visiting-card works! {{name}}</p>
+
+<h2> Employee data</h2>
+
+<div *ngFor="let employee of users">
+    username: {{employee.username}},
+    titile : {{employee.title}},
+    salary: {{employee.salary}},
+    deparment: <div [ngSwitch]="employee.deparment">
+        <span *ngSwitchCase="1">java</span>
+        <span *ngSwitchCase="2">angular</span>
+        <span *ngSwitchCase="3">react</span>
+        <span *ngSwitchDefault>other</span>
+    </div><br><br>
+     
+    <div *ngIf="employee.address.length>0">
+        Address:{{employee.address}}
+    </div><br><br>
+    <div *ngIf="employee.phone.length>0">
+    
+    phone:{{employee.phone}}
+    </div><br><br>
+</div>
+
+
